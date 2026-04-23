@@ -207,7 +207,7 @@ A dead ULA is one of the most expensive faults on a Spectrum because these chips
 - Tape loading completely broken when everything else is fine.
 - Overheating ULA that distorts video when hot and recovers when cool.
 
-Before blaming the ULA, exhaustively test the ROM, RAM, CPU, clock, and support logic. Replacement options are a salvaged original or the nULA by Tynemouth Software, an FPGA-based drop-in replacement that also improves colour clash timing.
+Before blaming the ULA, exhaustively test the ROM, RAM, CPU, clock, and support logic. Replacement options are a salvaged original or the nebULA by Retroleum, an FPGA-based drop-in replacement that also improves colour clash timing.
 
 ## 11. CPU, ROM, and Support Chip Faults
 
