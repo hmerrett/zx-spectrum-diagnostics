@@ -11,7 +11,7 @@ The main Sinclair 16K/48K boards you will encounter are:
 - **Issue 3, 3B**: The most common 48K boards.
 - **Issue 4A, 4B & 4S**: Production refinements, still using the same RAM and power arrangement.
 - **Issue 5**: Ultra rare. Short production run, a genuine collector piece that changes hands for thousands.
-- **Issue 6A**: Later production.
+- **Issue 6A**: Later production with a second logic array controlling upper RAM.
 
 All 16K and 48K Spectrums share the same fundamental power arrangement: an unregulated 9V DC input, a 7805 generating +5V, and a small switching stage around TR4 and TR5 that produces -5V and +12V for the 4116 DRAM chips. The three-rail arrangement is universal across the 16K and 48K range.
 
