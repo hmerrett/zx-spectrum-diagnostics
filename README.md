@@ -4,7 +4,7 @@
 
 Before anything else, identify which issue of board you have. This is silkscreened on the PCB itself, usually near the bottom edge. Boards were swapped, recased, and re-shelled throughout the lifetime of these machines, so never assume the case style tells you which board is inside. Always open it up and read the silkscreen.
 
-The main Sinclair 16K/48K boards you will encounter are:
+The original Sinclair 16K/48K boards you will encounter are:
 
 - **Issue 1**: Exceptionally rare, large aluminium heatsink, distinctive layout. Highly collectable.
 - **Issue 2**: Early production, common.
@@ -22,10 +22,9 @@ For later machines (128K toastrack, +2 in the Amstrad grey case, +2A, +2B, +3) t
 At minimum:
 
 - A digital multimeter with continuity beep and diode test
-- Small Philips screwdriver
+- Medium Philips screwdriver, small flat-blade screwdriver
 - A soldering iron (25 to 40 watts) and decent solder
 - Desoldering braid or a solder sucker
-- IC puller, or a small flat blade used carefully
 - Isopropyl alcohol and cotton buds
 
 Useful but not essential for a beginner:
@@ -42,6 +41,8 @@ The Spectrum PSU is low voltage, so there is no mains hazard at the board itself
 - Never work on a live board except when taking measurements.
 - The 7805 regulator runs very hot in normal operation. Burns are easy. Don't run for longer than a few seconds without the heatsink attached. 
 - If using a substitute PSU, verify polarity (original is centre negative) and voltage before plugging in. A reversed polarity PSU will destroy the board in seconds.
+
+Removing DIP chips from these boards demands patience, as the substrate and copper bonding have often degraded with age. After desoldering each pin with a desoldering gun, pump, or wick, a small amount of solder almost always remains clinging to the pins and via barrels. Attempting to lever the chip out at this stage is the silent killer of old boards: it is frequently enough to tear pads from the substrate, lift traces, or pull plated barrels straight out of their vias. A safe approach is the gentle application of heat from a heat gun to the underside of the board, softening any residual solder across all pins simultaneously so the chip lifts out with minimal upward force. Keep the heat moderate and moving, and the touch light, as too much heat in one spot will lift pads on its own.
 
 ## 4. Initial Physical Checks
 
@@ -328,3 +329,7 @@ A ULA that works cold and fails hot, or vice versa, often has a microcrack in a 
 Keep a copy of the schematic for the board issue you are working on. Service manuals for the common issues are freely available online. Knowing which Z80 pin connects to which bus line, and which chip holds which bit, saves many hours of probing.
 
 A known good Spectrum in the same workshop is invaluable both for comparison oscilloscope traces and for swap-testing socketed chips. When bringing a repaired machine up after any significant rework, use a bench PSU with a current limit set to around 500mA before trusting it on a full wall PSU.
+
+Be mindful about the use of sockets and heatsinks. Modern hobbyist DIP board builds often have every chip socketed with a heatsink attached as a matter of course. Sockets certainly make troubleshooting easier, but consider this: if you have built the board properly, verified the voltage rails, checked for shorts, and tested each chip in an external tester beforehand, does that chip genuinely need to sit in a socket under a heatsink? Most RAM and logic ICs of the DIP era run perfectly cool in normal operation and were never designed with additional cooling in mind; a heatsink on a 74-series logic chip or a vintage DRAM is almost always solving a problem that does not exist. Expensive or rare chips are a different matter: something like a ULA is irreplaceable and runs notoriously hot, so a socket makes sense and a heatsink is well worth fitting where space allows, though on rubber-key machines the case clearance often rules this out. 
+
+Chips are frequently cheaper than the sockets that hold them, and every socket introduces an additional failure point on top of the chip and the board itself. My advice: think twice before reaching for one.
